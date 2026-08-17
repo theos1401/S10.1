@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinéMatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>cinéma.CG</h1>
+      <div class="search-box">
+        <select id="categorySelect">
+          <option value="popular">Populaires</option>
+          <option value="top_rated">Mieux notés</option>
+          <option value="now_playing">En salle</option>
+          <option value="upcoming">Prochainement</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Recher un film..." />
+        <button id="searchBtn">Rechercher</button>
+        <button id="favBtn">coup de coeur</button>
+      </div>
+      <div id="moviesGrid" class="movies-grid"></div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
